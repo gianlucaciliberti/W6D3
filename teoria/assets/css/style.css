@@ -1,13 +1,59 @@
+@charset "UTF-8";
 body {
   background-color: cyan;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 32px;
+  color: red;
 }
 
-.container {
-  display: flex;
+section h2,
+article h2 {
+  color: red;
 }
+
+section {
+  background-color: aqua;
+}
+section h2 {
+  font-size: 27.2px;
+}
+
+article {
+  background-color: aquamarine;
+}
+article h2 {
+  font-size: 20.8px;
+}
+
+.btn {
+  padding: 8px 16px;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn.btn-large {
+  padding: 16px 32px;
+}
+.btn.disabled {
+  opacity: 0.5;
+}
+
+/* nesting errato, poco gestibile con specifictà altissima 
+.page {
+	.container {
+		.row {
+			.col {
+				.card {
+					.title {
+						font-size: myFontSize.$titleSize;
+					}
+				}
+			}
+		}
+	}
+}
+*/
 
 /*# sourceMappingURL=style.css.map */
